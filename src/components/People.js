@@ -1,30 +1,24 @@
-import React from 'react'
-import PeoplePage from '../pages/PeoplePage';
-import { Card, Grid } from 'semantic-ui-react';
+import React, { useState, useEffect } from 'react';
+import PeopleList from './PeopleList';
 
 const People = ( { data } ) => {
+    const [people, setPeople] = useState([]);
+
+    useEffect(() => {
+        fetch(`https://swapi.dev/api/people/?format=json`)
+        .then(res => res.json())
+        .then(json => {
+          console.log("People", json.results)
+          setPeople(json.results)
+        })
+        .catch(err => {
+          console.log(`Error: ${err}`)
+        })
+      },[])
+
   return (
     <div>
-        <h1>People</h1>
-        <Grid columns={3}>
-            {data.map((people, i) => {
-                return (
-                    <Grid.Column key={i}>
-                        <Card>
-                            <Card.Content>
-                                <Card.Header>{people.name}</Card.Header>
-                                <Card.Description>
-                                    <strong>Height</strong>
-                                    <p>{people.height}</p>
-                                    <strong>Mass</strong>
-                                    
-                                </Card.Description>
-                            </Card.Content>
-                        </Card>
-                    </Grid.Column>
-                )
-            })}
-        </Grid>
+        <PeopleList data={people} />
     </div>
   )
 }

@@ -15,21 +15,8 @@ import PlanetPage from './pages/PlanetPage';
 import People from './components/People';
 
 function App() {
-  const [people, setPeople] = useState([]);
   const [planets, setPlanets] = useState([]);
   const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    fetch(`https://swapi.dev/api/people/?format=json`)
-    .then(res => res.json())
-    .then(json => {
-      console.log("People", json.results)
-      setPeople(json.results)
-    })
-    .catch(err => {
-      console.log(`Error: ${err}`)
-    })
-  },[])
 
   useEffect(() => {
     fetch(`https://swapi.dev/api/planets/?format=json`)
@@ -55,7 +42,7 @@ function App() {
         ) : ( */}
           <Routes>
             <Route path= "/" element={<Home />} />
-            <Route path="/people" element={<People data={people} />} />
+            <Route path="/people" element={<PeoplePage />} />
             <Route path="/planets" element={<PlanetPage data={planets} />}/>
           </Routes>
         {/*)} */}
