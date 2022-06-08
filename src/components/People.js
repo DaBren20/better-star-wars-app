@@ -1,7 +1,8 @@
 import React from 'react'
+import PeoplePage from '../pages/PeoplePage';
 import { Card, Grid } from 'semantic-ui-react';
 
-const People = ({ data }) => {
+const People = ( { data } ) => {
   return (
     <div>
         <h1>People</h1>

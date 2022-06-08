@@ -12,6 +12,7 @@ import { Container, Dimmer, Loader } from 'semantic-ui-react';
 import Home from './pages/Home';
 import PeoplePage from './pages/PeoplePage';
 import PlanetPage from './pages/PlanetPage';
+import People from './components/People';
 
 function App() {
   const [people, setPeople] = useState([]);
@@ -54,7 +55,7 @@ function App() {
         ) : ( */}
           <Routes>
             <Route path= "/" element={<Home />} />
-            <Route path="/people" element={<PeoplePage data={people} />} />
+            <Route path="/people" element={<People data={people} />} />
             <Route path="/planets" element={<PlanetPage data={planets} />}/>
           </Routes>
         {/*)} */}
