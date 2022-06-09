@@ -8,7 +8,7 @@ const PeopleList = ( { data } ) => {
     <div>
           <Grid columns={3}>
             <Grid.Column>
-              {data.map((people, index) => {return ((<InfoCard key={index} name={people.name} gender={people.gender} height={people.height} mass={people.mass} />))})}
+              {data.map((people, index) => {return ((<InfoCard key={index} name={people.name} gender={people.gender} height={people.height} mass={people.mass} birth_year={people.birth_year}/>))})}
             </Grid.Column>
           </Grid>
     </div>
