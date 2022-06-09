@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import PeopleList from './PeopleList';
 
-const People = ( { data } ) => {
+const People = (props) => {
     const [people, setPeople] = useState([]);
 
     useEffect(() => {
