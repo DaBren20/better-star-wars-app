@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import PeopleList from './PeopleList';
+import { Grid } from 'semantic-ui-react';
 
 const People = (props) => {
     const [people, setPeople] = useState([]);
@@ -18,7 +19,11 @@ const People = (props) => {
 
   return (
     <div>
-        <PeopleList data={people} />
+        <Grid columns={3}>
+            <Grid.Column>
+              <PeopleList data={people} />
+            </Grid.Column>
+        </Grid>
     </div>
   )
 }

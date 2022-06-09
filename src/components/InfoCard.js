@@ -21,7 +21,6 @@ const InfoCard = ( props ) => {
                 </Card.Description>
             </Card.Content>
         </Card>
-
     </div>
   )
 }
