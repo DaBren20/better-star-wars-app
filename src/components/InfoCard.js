@@ -11,7 +11,7 @@ const InfoCard = ( props ) => {
                     <strong>Gender</strong>
                     <p>{props.gender}</p>
                     <strong>Height</strong>
-                    <p>{props.height}</p>
+                    <p>{props.height}cm</p>
                     <strong>Mass</strong>
                     <p>{props.mass}</p>
                     <strong>Birth Year</strong>
