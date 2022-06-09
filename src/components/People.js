@@ -19,11 +19,9 @@ const People = (props) => {
 
   return (
     <div>
-        <Grid columns={3}>
-            <Grid.Column>
+
               <PeopleList data={people} />
-            </Grid.Column>
-        </Grid>
+
     </div>
   )
 }
