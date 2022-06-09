@@ -19,9 +19,7 @@ const People = (props) => {
 
   return (
     <div>
-
-              <PeopleList data={people} />
-
+      <PeopleList data={people} />
     </div>
   )
 }
