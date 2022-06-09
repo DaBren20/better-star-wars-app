@@ -16,6 +16,8 @@ const InfoCard = ( props ) => {
                     <p>{props.mass}</p>
                     <strong>Birth Year</strong>
                     <p>{props.birth_year}</p>  
+                    <strong>Eye Colour</strong>
+                    <p>{props.eye_color}</p>
                 </Card.Description>
             </Card.Content>
         </Card>
