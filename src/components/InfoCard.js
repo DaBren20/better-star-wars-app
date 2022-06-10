@@ -13,11 +13,13 @@ const InfoCard = ( props ) => {
                     <strong>Height</strong>
                     <p>{props.height}cm</p>
                     <strong>Mass</strong>
-                    <p>{props.mass}</p>
+                    <p>{props.mass}kg</p>
                     <strong>Birth Year</strong>
                     <p>{props.birth_year}</p>  
                     <strong>Eye Colour</strong>
                     <p>{props.eye_color}</p>
+                    <strong>Skin colour</strong>
+                    <p>{props.skin_color}</p>
                 </Card.Description>
             </Card.Content>
         </Card>
