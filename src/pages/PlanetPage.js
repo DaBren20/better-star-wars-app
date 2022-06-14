@@ -8,6 +8,7 @@ const PlanetPage = () => {
     <div>
         <Navbar />
         <Banner title='Planets'/>
+        <h1>Fuck</h1>
         <Planets />  
     </div>
   )

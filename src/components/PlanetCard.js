@@ -11,11 +11,11 @@ const PlanetCard = ( props ) => {
                 <Card.Description>
                     <strong>Population</strong>
                     <p>{props.population}</p>
-                    <strong>Height</strong>
+                    <strong>Gravity</strong>
                     <p>{props.gravity}cm</p>
-                    <strong>Mass</strong>
+                    <strong>Climate</strong>
                     <p>{props.climate}kg</p>
-                    <strong>Birth Year</strong>
+                    <strong>Orbital period</strong>
                     <p>{props.orbital_period}</p>  
                     <strong>Eye Colour</strong>
                     <p>{props.diameter}</p>
