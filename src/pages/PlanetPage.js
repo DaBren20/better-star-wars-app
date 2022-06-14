@@ -6,7 +6,7 @@ const PlanetPage = () => {
   return (
     <div>
         <Navbar />
-        <Banner title='FUCKERS'/>
+        <Banner title='Planets'/>
     </div>
   )
 }

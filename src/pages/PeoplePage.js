@@ -8,8 +8,8 @@ const PeoplePage = () => {
   return (
     <div>
         <Navbar />
-        <Banner title='Hello World!'/>
-        <h1>List of Star Wars Characters</h1>
+        <Banner title='Pilots'/>
+        <h1>List of Star Wars Characters:</h1>
         <People />
     </div>
   )
