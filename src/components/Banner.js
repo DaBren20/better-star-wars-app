@@ -1,9 +1,9 @@
 import React from 'react'
 
-const Banner = () => {
+const Banner = (props) => {
   return (
     <div className='banner'>
-      lmao
+      <h1>{props.title}</h1>
     </div>
   )
 }

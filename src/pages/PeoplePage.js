@@ -8,7 +8,7 @@ const PeoplePage = () => {
   return (
     <div>
         <Navbar />
-        <Banner />
+        <Banner title='Hello World!'/>
         <People />
     </div>
   )
