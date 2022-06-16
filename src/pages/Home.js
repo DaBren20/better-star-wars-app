@@ -6,7 +6,7 @@ const Home = () => {
   return (
     <div>
         <Navbar />
-        <Banner title="Fuck you" />
+        <Banner title="Welcome" />
     </div>
   )
 }
