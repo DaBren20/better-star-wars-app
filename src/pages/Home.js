@@ -7,6 +7,8 @@ const Home = () => {
     <div>
         <Navbar />
         <Banner title="Welcome" />
+        <h1>Welcome to my star wars app</h1>
+        <p>This website uses the Star Wars API (<a href="https://swapi.dev/">SWAPI</a>)</p>
     </div>
   )
 }
