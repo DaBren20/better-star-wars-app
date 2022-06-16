@@ -1,11 +1,12 @@
 import React from 'react'
 import Navbar from '../components/Navbar'
+import Banner from '../components/Banner'
 
 const Home = () => {
   return (
     <div>
         <Navbar />
-        Home
+        <Banner title="Fuck you" />
     </div>
   )
 }
