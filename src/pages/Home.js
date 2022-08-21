@@ -12,6 +12,7 @@ const Home = () => {
         <p>Filler</p>
         <p>More Filler</p>
         <h1>Even more filler</h1>
+        <p>I'm back i swear</p>
     </div>
   )
 }
